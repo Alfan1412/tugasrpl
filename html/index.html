@@ -5,20 +5,30 @@
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>Speedywash</title>
+  <link href="img/favicon.ico" rel="icon">
+
+  <!-- CSS Libraries -->
+  <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" rel="stylesheet">
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.0/css/all.min.css" rel="stylesheet">
+  <link href="lib/flaticon/font/flaticon.css" rel="stylesheet">
+  <link href="lib/animate/animate.min.css" rel="stylesheet">
+  <link href="lib/owlcarousel/assets/owl.carousel.min.css" rel="stylesheet">
   <link href="..\css\style.css" rel="stylesheet" />
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
     integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous" />
+
 </head>
 
 <body>
   <!-- awal navbar -->
   <nav class="navbar navbar-expand-lg" id="nav">
     <div class="container-fluid">
-      <a class="navbar-brand fst-italic fw-bold" href="#">SPEEDYWASH</a>
+      <a class="navbar-brand fst-italic fw-bold p-3" href="#">SPEEDYWASH</a>
       <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup"
         aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
       </button>
+      <!-- ini cara bikin menu dropdown nya jadi putih gimana weh? -->
       <div class="collapse navbar-collapse justify-content-end" id="navbarNavAltMarkup">
         <div class="navbar-nav">
           <a class="nav-link active" aria-current="page" href="#">Home</a>
@@ -29,22 +39,26 @@
       </div>
     </div>
   </nav>
+
   <!-- akhir navbar -->
 
   <!-- awal banner -->
-  <div id="hero-carousel" class="carousel slide" data-bs-ride="carousel">
+  <div id="hero-carousel" class="carousel" data-bs-ride="carousel">
     <div class="carousel-inner">
       <div class="carousel-item active c-item">
         <img id="bn1" src="../asset/banner.jpg" class="d-block w-100 c-img" alt="..." />
         <div class="carousel-caption top-0 mt-4">
           <p class="mt-5 fs-3">Cuci Mobil di Mana Saja, Kapan Saja!</p>
-          <h1 class="display-1 fw-bolder">SPEEDYWASH</h1>
-          <button type="button" class="btn px-4 py-2 fs-5 mt-5 btn-primary">Reservasi sekarang</button>
+          <h1 class="display-1 fw-bolder pb-5">SPEEDYWASH</h1>
+          <button type="button" class="btn px-4 py-2 fs-5" style="background-color: #121481; color:white">Reservasi
+            sekarang</button>
         </div>
       </div>
     </div>
-    <div class="carousel-item c-item">
-      <img id="bn1" src="../asset/banner2.jpg" class="d-block w-100 c-img" alt="..." />
+
+    <!-- ini caraousel nya masih error, gambar nya full, ga bisa dipotonh -->
+    <!-- <div class="carousel-item c-item">
+      <img id="bn2" src="../asset/banner2.jpg" class="d-block w-100 c-img" alt="..." />
       <div class="carousel-caption top-0 mt-4">
         <p class="mt-5 fs-3">Cuci Mobil di Mana Saja, Kapan Saja!</p>
         <h1 class="display-1 fw-bolder">SPEEDYWASH</h1>
@@ -52,26 +66,59 @@
       </div>
     </div>
     <div class="carousel-item c-item">
-      <img id="bn1" src="../asset/banner3.jpg" class="d-block w-100 c-img" alt="..." />
+      <img id="bn3" src="../asset/banner3.jpg" class="d-block w-100 c-img" alt="..." />
       <div class="carousel-caption top-0 mt-4">
         <p class="mt-5 fs-3">Cuci Mobil di Mana Saja, Kapan Saja!</p>
         <h1 class="display-1 fw-bolder">SPEEDYWASH</h1>
         <button type="button" class="btn px-4 py-2 fs-5 mt-5 btn-primary">Reservasi sekarang</button>
       </div>
-    </div>
+    </div> -->
   </div>
-  <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleAutoplaying" data-bs-slide="prev">
+
+  <!-- button -->
+  <!-- <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleAutoplaying" data-bs-slide="prev">
     <span class="carousel-control-prev-icon" aria-hidden="true"></span>
     <span class="visually-hidden">Previous</span>
   </button>
   <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleAutoplaying" data-bs-slide="next">
     <span class="carousel-control-next-icon" aria-hidden="true"></span>
     <span class="visually-hidden">Next</span>
-  </button>
-  </div>
+  </button> -->
+
   <!-- akhir banner -->
 
   <!--awal about us -->
+  <div class="about">
+    <div class="container">
+      <div class="row align-items-center">
+        <div class="col-lg-6">
+          <div class="about-img">
+            <img src="../asset/about.jpg" alt="Image">
+          </div>
+        </div>
+        <div class="col-lg-6 p-5">
+          <div class="section-header text-left">
+            <p class="fs-5">About Us</p>
+            <h2 class="fw-bold display-5">Nikmati Kemudahan Cuci Mobil Tanpa Keluar Rumah!</h2>
+          </div>
+          <div class="about-content">
+            <p>
+              SpeedyWash adalah solusi tepat untuk menjaga kebersihan dan kilau mobil Anda tanpa harus repot
+              keluar rumah. Tim profesional kami siap datang ke lokasi Anda untuk memberikan layanan cuci mobil dengan
+              kualitas terbaik menggunakan teknologi cuci mobil modern dan bahan-bahan berkualitas.
+            </p>
+            <ul>
+              <li><i class="far fa-check-circle"></i>Nyaman</li>
+              <li><i class="far fa-check-circle"></i>Hemat waktu</li>
+              <li><i class="far fa-check-circle"></i>Terpercaya</li>
+              <li><i class="far fa-check-circle"></i>berkualitas</li>
+            </ul>
+            <a class="btn btn-custom" style="background-color: #121481; color:white" href="">Learn More</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
   <!-- akhir about us -->
 
   <!-- awal service -->

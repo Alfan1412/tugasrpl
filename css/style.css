@@ -1,22 +1,146 @@
+body {
+  color: #444444;
+  font-weight: 400;
+  background: #ffffff;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+    Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  color: #202c45;
+}
+
+a {
+  color: #202c45;
+  transition: 0.3s;
+}
+
+a:hover,
+a:active,
+a:focus {
+  color: #52b5ed;
+  outline: none;
+  text-decoration: none;
+}
+
+.btn.btn-custom {
+  padding: 10px 30px 12px 30px;
+  text-align: center;
+  font-size: 16px;
+  font-weight: 500;
+  color: #ffffff;
+  background: #52b5ed;
+  border: none;
+  border-radius: 60px;
+  box-shadow: inset 0 0 0 0 #202c45;
+  transition: ease-out 0.5s;
+  -webkit-transition: ease-out 0.5s;
+  -moz-transition: ease-out 0.5s;
+}
+
+.btn.btn-custom:hover {
+  color: #fff;
+  background: #202c45;
+  box-shadow: inset 200px 0 0 0 #202c45;
+}
+
+.btn:focus,
+.form-control:focus {
+  box-shadow: none;
+}
+
+.container-fluid {
+  max-width: 1366px;
+}
+
+[class^="flaticon-"]:before,
+[class*=" flaticon-"]:before,
+[class^="flaticon-"]:after,
+[class*=" flaticon-"]:after {
+  font-size: inherit;
+  margin-left: 0;
+}
+
 #nav {
-  background-color: #706c6c;
+  background-color: #121481;
 }
 
 .navbar-brand,
 .navbar-nav .nav-link {
   color: white !important;
+  padding: 15px;
+  font-weight: 500;
+  letter-spacing: 1px;
 }
 
-#bn1 {
-  filter: brightness(0.7);
+.nav-bar .dropdown-menu {
+  margin-top: 0;
+  border: 0;
+  border-radius: 0;
+  background: #f8f9fa;
 }
+
+ .nav-bar .dropdown-menu {
+        box-shadow: none;
+    }
+
+/* #bn1 #bn2 #bn3 {
+  filter: brightness(0.7);
+} */
 
 .c-item {
   height: 480px;
 }
 
-.c-img{
+.c-img {
   height: 100%;
   object-fit: cover;
   filter: brightness(0.7);
+}
+
+.btn{
+  color: #ffffff;
+  background-color: #121481;
+}
+
+.about {
+  position: relative;
+  width: 100%;
+  padding: 45px 0 15px 0;
+}
+
+.about .section-header {
+  margin-bottom: 30px;
+  margin-left: 0;
+}
+
+.about .about-img img {
+  width: 100%;
+  border-radius: 5px;
+  margin-bottom: 30px;
+}
+
+.about .about-content {
+  margin-bottom: 30px;
+}
+
+.about .about-content ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  margin-bottom: 25px;
+}
+
+.about .about-content ul li {
+  margin-bottom: 5px;
+}
+
+.about .about-content ul li i {
+  margin-right: 8px;
+  color: #121481;
 }
